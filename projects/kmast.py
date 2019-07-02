@@ -1,0 +1,6 @@
+print ("# This is a statement inside 'kmast.py' #")
+f = open('script.py','w')
+f.write('print("## and this is inside \'script.py\' ##")')
+f.close()
+print("script.py fired by kmast.py")
+exec(open("script.py").read())
